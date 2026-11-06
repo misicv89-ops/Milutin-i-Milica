@@ -146,8 +146,8 @@ body.mm-lock{overflow:hidden}
   </div>
   <div id="mm-menu" class="mm-menu" hidden>
     <nav aria-label="Mobilna navigacija" style="position:absolute;top:var(--hh);left:0;right:0;height:calc(100dvh - var(--hh));background:#F4EEE6;padding:24px 20px 120px;display:flex;flex-direction:column">
-      <a href="igraonica.html" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Igraonica</a>
-      <a href="cuvaonica.html" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Čuvaonica</a>
+      <a href="#prostor" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Igraonica</a>
+      <a href="#cuvaonica" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Čuvaonica</a>
       <a href="#cene" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Cene</a>
       <a href="#faq" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Pitanja</a>
       <a href="blog.html" style="padding:14px 0;font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:#24152F;text-decoration:none;border-bottom:1px solid rgba(36,21,47,0.12)">Blog</a>
@@ -176,7 +176,7 @@ body.mm-lock{overflow:hidden}
       </div>
       <p style="margin:clamp(24px,3vw,40px) 0 0;max-width:440px;font-size:clamp(17px,1.35vw,19px);line-height:1.55;color:#4A3B55;text-wrap:pretty">Dečja igraonica i čuvaonica na drugom spratu TC Roda u Kragujevcu. Deca se igraju bezbedno uz naše osoblje, a vi sedite u kafiću ili ih ostavite na čuvanje po satu dok završite obaveze.</p>
       <div style="margin-top:clamp(28px,3vw,44px);display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
-        <a href="cuvaonica.html" style="display:inline-flex;align-items:center;gap:14px;padding:18px 30px;border-radius:999px;background:#6B34A8;color:#fff;font-weight:600;font-size:16px;text-decoration:none;transition:background .25s,transform .25s" class="hv2">Čuvanje dece <span aria-hidden="true">→</span></a>
+        <a href="cuvaonica.html" data-dhref="cuvaonica.html" data-mhref="#cuvaonica" style="display:inline-flex;align-items:center;gap:14px;padding:18px 30px;border-radius:999px;background:#6B34A8;color:#fff;font-weight:600;font-size:16px;text-decoration:none;transition:background .25s,transform .25s" class="hv2">Čuvanje dece <span aria-hidden="true">→</span></a>
         <a href="#cene" style="font-weight:600;font-size:16px;color:#24152F;text-decoration:none;padding-bottom:3px;border-bottom:1px solid #24152F" class="hv3">Pogledaj cene</a>
       </div>
     </div>
@@ -201,7 +201,7 @@ body.mm-lock{overflow:hidden}
       <div>
         <h2 data-reveal="" style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(38px,4.8vw,80px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Igraonica od preko 300 m² za igru, avanturu i odmor. A pored, <em style="font-style:italic;color:#6B34A8">kafić</em> za roditelje.</h2>
         <p data-reveal="" style="margin:clamp(20px,2.4vw,32px) 0 0;max-width:640px;font-size:17px;line-height:1.6;color:#4A3B55;text-wrap:pretty">Dečja igraonica Milutin i Milica nalazi se u TC Roda u Kragujevcu. Avantura staza, tobogani, bazen sa lopticama, sportski kutak i poseban bebi kutak za najmlađe. Klimatizovan i nepušački prostor, uz osoblje koje je uvek tu.</p>
-        <a href="igraonica.html" style="display:inline-block;margin-top:24px;font-weight:600;font-size:16px;color:#24152F;text-decoration:none;border-bottom:1px solid #24152F;padding-bottom:3px" class="hv3">Sve o igraonici →</a>
+        <div class="only-d"><a href="igraonica.html" style="display:inline-block;margin-top:24px;font-weight:600;font-size:16px;color:#24152F;text-decoration:none;border-bottom:1px solid #24152F;padding-bottom:3px" class="hv3">Sve o igraonici →</a></div>
       </div>
     </div>
     <div  data-g="galCols" style="margin-top:clamp(56px,7vw,112px);display:grid;gap:clamp(14px,1.6vw,22px)">
@@ -290,7 +290,7 @@ body.mm-lock{overflow:hidden}
     <p style="margin:0;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#C9B5E4">ČUVAONICA · ČUVANJE DECE KRAGUJEVAC</p>
     <h2 data-reveal="" style="margin:clamp(24px,3vw,40px) 0 0;max-width:1100px;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(52px,8.4vw,148px);line-height:0.9;letter-spacing:-0.035em">Vi završite obaveze.<br><em style="font-style:italic;color:#C9B5E4">Mi pazimo na dete.</em></h2>
     <p data-reveal="" style="margin:clamp(24px,3vw,40px) 0 0;max-width:640px;font-size:17px;line-height:1.6;color:#D9CCE8;text-wrap:pretty">Čuvaonica Milutin i Milica je mesto gde možete ostaviti dete na čuvanje po satu, u TC Roda u Kragujevcu. Dok vi obavite kupovinu ili posao, dete se igra u bezbednom prostoru, uz naše osoblje.</p>
-    <a href="cuvaonica.html" style="display:inline-block;margin-top:24px;font-weight:600;font-size:16px;color:#F4EEE6;text-decoration:none;border-bottom:1px solid #F4EEE6;padding-bottom:3px" class="hv9">Sve o čuvaonici →</a>
+    <div class="only-d"><a href="cuvaonica.html" style="display:inline-block;margin-top:24px;font-weight:600;font-size:16px;color:#F4EEE6;text-decoration:none;border-bottom:1px solid #F4EEE6;padding-bottom:3px" class="hv9">Sve o čuvaonici →</a></div>
     <div  data-g="cafeCols" style="margin-top:clamp(56px,7vw,112px);display:grid;gap:clamp(36px,5vw,96px);align-items:start">
       <div style="aspect-ratio:1/1;width:100%;border-radius:50%;overflow:hidden;background:#3A2848"><img src="uploads/milutin-i-milica-instagram-slike/galerija/galerija-deca-igra-u-krugu.webp" alt="Deca se igraju u krugu uz osoblje čuvaonice Milutin i Milica" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
       <div>
@@ -401,7 +401,7 @@ body.mm-lock{overflow:hidden}
   <div id="mm-bar" class="mm-bar">
   <div style="position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;gap:4px;padding:5px;border-radius:999px;background:#24152F;box-shadow:0 18px 40px -14px rgba(36,21,47,0.7)">
     <a href="tel:+381693006875" style="flex:1;display:flex;justify-content:center;align-items:center;min-height:50px;border-radius:999px;background:#6B34A8;color:#fff;font-weight:600;font-size:16px;text-decoration:none">Pozovi</a>
-    <a href="cuvaonica.html" style="flex:1;display:grid;place-items:center;min-height:50px;border-radius:999px;color:#F4EEE6;font-weight:500;font-size:15px;text-decoration:none">Čuvaonica</a>
+    <a href="#cuvaonica" style="flex:1;display:grid;place-items:center;min-height:50px;border-radius:999px;color:#F4EEE6;font-weight:500;font-size:15px;text-decoration:none">Čuvaonica</a>
   </div>
   </div>
 </div>
@@ -458,6 +458,9 @@ body.mm-lock{overflow:hidden}
     var p = v.play(); if (p && p.catch) p.catch(function(){});
   }
   initVideo();
+  /* links that differ on mobile (stay on this page) */
+  var swap = function(){ document.querySelectorAll('[data-mhref]').forEach(function(a){ a.setAttribute('href', isMob() ? a.getAttribute('data-mhref') : a.getAttribute('data-dhref')); }); };
+  swap(); if (mq.addEventListener) mq.addEventListener('change', swap);
   /* zoom gallery */
   var zoom = document.getElementById('mm-zoom'), zImg = document.getElementById('mm-zoom-img'), zCount = document.getElementById('mm-zoom-count');
   var items = [], zi = 0;
