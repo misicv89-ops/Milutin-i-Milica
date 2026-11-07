@@ -84,3 +84,9 @@ em{font-style:italic;color:#6B34A8}
 .cta{margin-top:56px;padding:clamp(28px,4vw,44px);border-radius:28px;background:#24152F;color:#F4EEE6}
 .cta p{color:#D9CCE8}
 .cta .h3{color:#F4EEE6}
+/* blog: portretne slike na mobilnom prikaži skoro cele */
+@media (max-width:759px){
+.card > a > img{aspect-ratio:4/5;object-position:50% 30%}
+.post .cover{aspect-ratio:4/5}
+.post .cover img{object-position:50% 30%}
+}
